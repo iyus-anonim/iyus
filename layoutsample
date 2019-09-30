@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="411dp"
+                    android:layout_height="279dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="269dp">
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="311dp"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="74dp"
+                            android:layout_height="71dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/colorPrimaryDark"
+                            android:text="$75 per night"
+                            android:textSize="20dp" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="374dp"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.core.widget.NestedScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:fillViewport="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="fotografi"
+                                    android:textAlignment="center"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Gunung semeru atau puncak semeru di kenal umumnya dikenal dengan sebutan Gunung Mahamaru. Adalah salah satu gunung berapi yang selalu aktif dan bersifat volcano. Puncak semeru yang bernama Jonggring Saloko adalah salah satu puncak gunung tertinggi di pulau Jawa. Tidak mengeherankan jika banyak wisatwan lokal atau wisatawan luar negri yang penasaran untuk menakhlukan tantangan pendakian di Gunung ini yaitu dengan ketinggian 3.676 meter dari permukaan laut ( mdpl ). Semeru terletak di Taman Nasional Bromo Tengger Semeru (TNBTS) , dimana lokasinya di sebelah selatan dari taman nasional terbaik di Indonesia ini. Jadi dalam paket pendakian gunung semeru ini kami akan mengajak anda mendaki ke puncak Semeru sekaligus explore keindahan danau ranu kumbolo." />
+                            </LinearLayout>
+                        </androidx.core.widget.NestedScrollView>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:layout_gravity="bottom|end"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="REQUEST TO BOOK" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
